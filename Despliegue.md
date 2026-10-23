@@ -40,6 +40,7 @@ El proyecto original estaba pensado para GitHub Pages (subruta `/pokedex-angular
 | `angular.json` | `optimization.styles.inlineCritical: false` | Angular inserta `onload="this.media='all'"` en el HTML, que la CSP sin `'unsafe-inline'` en scripts bloquearía. |
 | `src/staticwebapp.config.json` | Nuevo | Rutas SPA y encabezados de seguridad (ver sección 4). |
 | `.github/workflows/azure-static-web-apps.yml` | Nuevo | Compila y despliega en cada `push` a `main`. |
+| `.github/workflows/pipelines.yml` | Eliminado | Workflow de pruebas/Codecov del autor original; requería un `CODECOV_TOKEN` que no tenemos y fallaba en cada `push`. |
 
 ### 1.3 Probar la compilación en local
 
