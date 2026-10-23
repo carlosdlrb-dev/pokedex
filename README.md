@@ -2,7 +2,8 @@
 
 Este repositorio contiene la aplicación **PokeDex** (Angular 14) desarrollada por PumasLab para **Pueblo Paleta Inc.**, publicada en la nube pública **Microsoft Azure** usando la suscripción gratuita **Azure for Students** y el servicio **Azure Static Web Apps**.
 
-- **URL pública:** `https://<nombre-asignado>.azurestaticapps.net` *(reemplazar por la URL real)*
+- **URL pública:** <https://red-flower-0418aa50f.6.azurestaticapps.net>
+- **Calificación en securityheaders.com:** **A+**
 - **Guía de despliegue:** ver [Despliegue.md](Despliegue.md)
 
 ---

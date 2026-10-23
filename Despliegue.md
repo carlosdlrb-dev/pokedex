@@ -14,7 +14,7 @@ GitHub Actions ── npm ci + ng build ──► dist/pokedex-angular
 Azure Static Web Apps (CDN global + HTTPS automático)
         │  staticwebapp.config.json → encabezados de seguridad
         ▼
-https://<nombre>.azurestaticapps.net
+https://red-flower-0418aa50f.6.azurestaticapps.net
 ```
 
 ## 1. Preparar el código fuente
@@ -108,9 +108,11 @@ Además, `navigationFallback` reescribe cualquier ruta (ej. `/pokemon/25`) a `/i
 1. Abrir la URL pública y comprobar que carga el listado, el detalle (`/pokemon/25`) y la página `/about`, sin errores en la consola del navegador (F12).
 2. Verificar los encabezados desde la terminal:
    ```bash
-   curl -sI https://<nombre>.azurestaticapps.net
+   curl -sI https://red-flower-0418aa50f.6.azurestaticapps.net
    ```
-3. Escanear en <https://securityheaders.com/> con la URL pública (marcar *Hide results* si no se quiere publicar). Resultado obtenido: **`<colocar nota>`**.
+3. Escanear en <https://securityheaders.com/> con la URL pública (marcar *Hide results* si no se quiere publicar). Resultado obtenido: **A+** (23 de octubre de 2026), con los 6 encabezados evaluados en verde.
+
+   ![Resultado A+ en securityheaders.com](docs/securityheaders.png)
 4. (Opcional) Auditorías adicionales:
    - **SSL Labs:** <https://www.ssllabs.com/ssltest/> con el dominio `*.azurestaticapps.net`.
    - **OWASP ZAP:** *Automated Scan* contra la URL pública.
